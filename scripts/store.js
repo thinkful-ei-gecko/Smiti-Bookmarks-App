@@ -28,7 +28,7 @@ const store = (function() {
   };
 
   const findAndDelete = function(id) {
-    this.mylist = this.list.filter(bookmark => bookmark.id !== id);
+    this.mylist = this.mylist.filter(bookmark => bookmark.id !== id);
   };
 
   const toggleAdding = function() {
