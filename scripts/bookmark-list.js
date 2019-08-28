@@ -166,7 +166,7 @@ const bookmarkApp = (function() {
       const id = $(this).closest('.bookmark-list-item').attr('data-id');
       api.deleteMyBookmark(id, function() {
         store.findAndDelete(id);
-        store.setSuccess('Bookmark deleted');
+        store.setSuccess('One of my Bookmark has been deleted');
         renderMyBookmark();
       });
     });
