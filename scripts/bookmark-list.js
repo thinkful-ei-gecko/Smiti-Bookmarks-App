@@ -129,7 +129,7 @@ const bookmarkApp = (function() {
       modifyListHtml = showAddListHtml();
     } 
 
-    const filteredList = store.list.filter(bookmark => bookmark.rating >= store.filter);
+    const filteredList = store.mylist.filter(bookmark => bookmark.rating >= store.filter);
     const listHtml = store.adding ? '' : filteredList.map(showMySavedBookmark).join('');
 
 
